@@ -1,5 +1,5 @@
 import React from "react";
-import GetStarted from "./get-started";
+import GetStarted from "../../components/get-started";
 
 const Page = () => {
     return (

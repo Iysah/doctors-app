@@ -1,0 +1,8 @@
+{
+  "/favicon.ico/route": "/favicon.ico",
+  "/get-started/page": "/get-started",
+  "/(dashboard)/page": "/",
+  "/auth/login/page": "/auth/login",
+  "/auth/forgot-password/page": "/auth/forgot-password",
+  "/auth/signup/page": "/auth/signup"
+}

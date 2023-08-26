@@ -1,6 +1,6 @@
 "use client";
 
-import full_logo from "../../../../public/full-logo.svg";
+import { FullLogo } from "../assets";
 import {
     BgGreen,
     BgWhite,
@@ -13,7 +13,7 @@ import {
     BgButton,
     SignUp,
     Prompt,
-} from "../../styles/auth.style";
+} from "../styles/auth.style";
 
 import React from "react";
 import Image from "next/image";
@@ -26,7 +26,7 @@ const ForgotPassword = () => {
             <BgGreen>
                 <div>
                     <Logo>
-                        <Image src={full_logo} alt="" />
+                        <Image src={FullLogo} alt="" />
                     </Logo>
                 </div>
             </BgGreen>
