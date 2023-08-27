@@ -10,6 +10,7 @@ import {
     WalletManagementIcon,
 } from "../svg-icons";
 import Image from "next/image";
+import { FullLogo } from '../../assets/index'
 import { usePathname } from "next/navigation";
 
 const SideBar = () => {
@@ -19,7 +20,7 @@ const SideBar = () => {
         <Wrapper>
             <Logo>
                 <Image
-                    src="/full-logo.svg"
+                    src={FullLogo}
                     width="214"
                     height="58"
                     alt="theraswift logo"

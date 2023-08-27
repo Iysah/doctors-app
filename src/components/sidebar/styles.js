@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     );
     padding: 60px 0;
     min-width: 285px;
-    height: 100%;
+    height: 100vh;
 
     position: sticky;
     top: 0;
