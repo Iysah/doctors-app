@@ -1,4 +1,4 @@
-// File: /Users/Adoza/Documents/doctors-app/src/app/(dashboard)/page.js
+// File: C:\Users\User\Documents\HTM-FILES\Projects in 2023\Jobs\Iysah\doctors-app\src\app\(dashboard)\page.js
 import * as entry from '../../../../src/app/(dashboard)/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
