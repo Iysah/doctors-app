@@ -1,10 +1,12 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { InnerContainer, Sort, User, UserWrapper, Wrapper } from "./styles";
 import Image from "next/image";
+import { Sling as Hamburger } from "hamburger-react";
 
 const Header = () => {
+    const [isOpen, setOpen] = useState(false);
     return (
         <Wrapper>
             <InnerContainer>
@@ -70,6 +72,14 @@ const Header = () => {
                                 stroke="white"
                             />
                         </svg>
+                    </div>
+
+                    <div className="hamburger">
+                        <Hamburger
+                            size="24"
+                            toggle={setOpen}
+                            toggled={isOpen}
+                        />
                     </div>
 
                     <User>

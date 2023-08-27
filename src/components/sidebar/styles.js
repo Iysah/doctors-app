@@ -1,21 +1,46 @@
 import { styled } from "styled-components";
 
 export const Wrapper = styled.div`
-    border-radius: 0px 48px 48px 0px;
-    background: linear-gradient(
-        180deg,
-        #1a4942 0%,
-        #1a4942 54.41%,
-        #1a4942 77.29%,
-        #0e6154 99.48%
-    );
-    padding: 60px 0;
-    min-width: 285px;
-    height: 100vh;
+    height: 100%;
 
     position: sticky;
     top: 0;
     z-index: 11;
+
+    div.inner-container {
+        border-radius: 0px 48px 48px 0px;
+        background: linear-gradient(
+            180deg,
+            #1a4942 0%,
+            #1a4942 54.41%,
+            #1a4942 77.29%,
+            #0e6154 99.48%
+        );
+        padding: 60px 0;
+        min-width: 285px;
+        min-height: 100vh;
+    }
+
+    @media screen and (max-width: 1000px) {
+        background: rgba(0, 0, 0, 0.4);
+        width: 100%;
+
+        position: fixed;
+        /* visibility: hidden; */
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        div.inner-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            max-width: 285px;
+            overflow-y: auto;
+        }
+    }
 `;
 
 export const Logo = styled.div`
@@ -36,6 +61,10 @@ export const Route = styled.button`
     display: flex;
     padding: 12.5px 20px 12.5px 50px;
     position: relative;
+
+    @media screen and (max-width: 1000px) {
+        padding: 20px 20px 20px 50px;
+    }
 
     svg > path {
         fill: ${({ $active }) => ($active ? "#fff" : "#C2C0FF")};

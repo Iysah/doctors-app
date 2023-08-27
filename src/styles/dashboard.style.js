@@ -4,19 +4,49 @@ export const Wrapper = styled.div`
     /* height(100px) of header plus 30px padding for top */
 
     padding: 130px 35px 50px;
-    /* width: calc(100vw - 285px); */
+    max-width: calc(100vw - 285px);
+
+    @media screen and (max-width: 1000px) {
+        max-width: initial;
+        padding: 110px 35px 50px;
+        width: 100vw;
+    }
+
+    @media screen and (max-width: 416px) {
+        padding: 110px 20px 50px;
+    }
+
+    @media screen and (max-width: 330px) {
+        padding: 110px 16px 50px;
+    }
 `;
 
 export const Heading1 = styled.h1`
     color: #1a4942;
     font-size: 28px;
     font-weight: 600;
+
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 570px) {
+        font-size: 20px;
+    }
 `;
 
 export const Heading2 = styled.h2`
     color: #222;
     font-size: 22px;
     font-weight: 600;
+
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 570px) {
+        font-size: 14px;
+    }
 `;
 
 export const RequestCard = styled.div`
@@ -27,14 +57,30 @@ export const RequestCard = styled.div`
     border-radius: 30px;
     margin-top: 30px;
     padding: 30px 25px 45px;
-
     color: #fff;
+
+    @media screen and (max-width: 768px) {
+        border-radius: 25px;
+    }
+
+    @media screen and (max-width: 386px) {
+        border-radius: 20px;
+        padding: 20px 25px 35px;
+    }
 
     h3 {
         font-size: 24px;
         font-weight: 600;
         letter-spacing: 0.2px;
         margin-bottom: 10px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 570px) {
+            font-size: 16px;
+        }
     }
 
     p {
@@ -49,6 +95,22 @@ export const RequestCard = styled.div`
             font-weight: 400;
             margin-top: 5px;
         }
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+
+            span {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 570px) {
+            font-size: 10px;
+
+            span {
+                font-size: 8px;
+            }
+        }
     }
 `;
 
@@ -60,34 +122,60 @@ export const Grid = styled.div`
     padding: 15px 0 25px;
 
     .grid {
-        border: 1px solid rgba(34, 34, 34, 0.25);
-        border-top: none;
         display: grid;
-        grid-template-columns: 1fr 2fr repeat(3, 1fr);
+        grid-template-columns: 1fr 1.625fr 0.375fr repeat(3, 1fr);
+
+        @media screen and (max-width: 570px) {
+            grid-template-columns: 1fr 2fr 0fr repeat(3, 1fr);
+        }
 
         p {
-            padding: 8px 25px 8px 17px;
+            border-top: 1px solid rgba(34, 34, 34, 0.25);
             color: rgba(34, 34, 34, 0.7);
+            cursor: pointer;
             font-size: 14px;
             font-weight: 400;
+            padding: 8px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 10px;
+            }
+
+            @media screen and (max-width: 570px) {
+                font-size: 7px;
+                padding: 4px;
+            }
         }
     }
 
-    .top-border {
-        border-top: 1px solid rgba(34, 34, 34, 0.25);
-    }
-
-    .grid-heading {
+    p.no-border {
         border: none;
-        p {
-            color: #111;
-            font-size: 18px;
-            font-weight: 600;
-            padding-bottom: 14px;
+    }
+
+    p.border-left {
+        border-left: 1px solid rgba(34, 34, 34, 0.25);
+    }
+
+    p.border-right {
+        border-right: 1px solid rgba(34, 34, 34, 0.25);
+    }
+
+    p.border-bottom {
+        border-bottom: 1px solid rgba(34, 34, 34, 0.25);
+    }
+
+    p.grid-heading {
+        color: #111;
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 14px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
         }
 
-        .info {
-            overflow: visible;
+        @media screen and (max-width: 570px) {
+            font-size: 10px;
         }
     }
 

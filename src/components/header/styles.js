@@ -11,6 +11,12 @@ export const Wrapper = styled.div`
     /* fix for nav rounded border */
     left: 240px;
     padding-left: 80px;
+
+    @media screen and (max-width: 1000px) {
+        left: 0;
+        padding: 15px 25px;
+        width: 100vw;
+    }
 `;
 
 export const InnerContainer = styled.div`
@@ -53,12 +59,27 @@ export const Sort = styled.div`
         transform: translateY(-50%);
         right: 16px;
     }
+
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
 `;
 
 export const UserWrapper = styled.div`
     align-items: center;
     column-gap: 20px;
     display: flex;
+
+    @media screen and (min-width: 1000px) {
+        div.hamburger {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        justify-content: space-between;
+        width: 100%;
+    }
 `;
 
 export const User = styled.div`
@@ -82,5 +103,9 @@ export const User = styled.div`
         color: #333;
         font-size: 12px;
         font-weight: 300;
+    }
+
+    @media screen and (max-width: 1000px) {
+        display: none;
     }
 `;
