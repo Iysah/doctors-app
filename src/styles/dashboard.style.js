@@ -166,6 +166,7 @@ export const Grid = styled.div`
 
     p.grid-heading {
         color: #111;
+        cursor: auto;
         font-size: 18px;
         font-weight: 600;
         padding-bottom: 14px;

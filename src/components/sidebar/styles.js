@@ -26,11 +26,12 @@ export const Wrapper = styled.div`
         width: 100%;
 
         position: fixed;
-        /* visibility: hidden; */
+        visibility: ${({ $isOpen }) => ($isOpen ? "visible" : "hidden")};
         min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        transition: visibility ease 200ms;
 
         div.inner-container {
             display: flex;
@@ -39,6 +40,17 @@ export const Wrapper = styled.div`
             height: 100%;
             max-width: 285px;
             overflow-y: auto;
+
+            transform: ${({ $isOpen }) =>
+                $isOpen ? "translateX(0)" : "translateX(-200px)"};
+            transition: transform ease 500ms;
+        }
+    }
+
+    @media screen and (max-width: 340px) {
+        div.inner-container {
+            min-width: auto;
+            width: 80%;
         }
     }
 `;
@@ -46,6 +58,12 @@ export const Wrapper = styled.div`
 export const Logo = styled.div`
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 340px) {
+        img {
+            width: 70%;
+        }
+    }
 `;
 
 export const Routes = styled.div`
@@ -66,6 +84,10 @@ export const Route = styled.button`
         padding: 20px 20px 20px 50px;
     }
 
+    @media screen and (max-width: 340px) {
+        padding: 15px 15px 15px 40px;
+    }
+
     svg > path {
         fill: ${({ $active }) => ($active ? "#fff" : "#C2C0FF")};
     }
@@ -76,6 +98,10 @@ export const Route = styled.button`
         font-size: 14px;
         font-weight: ${({ $active }) => ($active ? "600" : "500")};
         padding-left: 14px;
+
+        @media screen and (max-width: 340px) {
+            font-size: 12px;
+        }
     }
 
     .pr-first {

@@ -4,9 +4,12 @@ import React, { useState } from "react";
 import { InnerContainer, Sort, User, UserWrapper, Wrapper } from "./styles";
 import Image from "next/image";
 import { Sling as Hamburger } from "hamburger-react";
+import { useDispatch, useSelector } from "react-redux";
+import { toggle } from "../../redux/slices/toggle-mobile-nav";
 
 const Header = () => {
-    const [isOpen, setOpen] = useState(false);
+    const isMenuOpen = useSelector((state) => state.toggle.isMenuOpen);
+    const dispatch = useDispatch();
     return (
         <Wrapper>
             <InnerContainer>
@@ -74,12 +77,11 @@ const Header = () => {
                         </svg>
                     </div>
 
-                    <div className="hamburger">
-                        <Hamburger
-                            size="24"
-                            toggle={setOpen}
-                            toggled={isOpen}
-                        />
+                    <div
+                        className="hamburger"
+                        onClick={() => dispatch(toggle())}
+                    >
+                        <Hamburger size="24" toggled={isMenuOpen} />
                     </div>
 
                     <User>

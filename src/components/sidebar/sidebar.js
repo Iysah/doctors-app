@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Logo, Route, Routes, Wrapper } from "./styles";
 import {
     ChatIcon,
@@ -12,13 +12,37 @@ import {
 import Image from "next/image";
 import { FullLogo } from "../../assets/index";
 import { usePathname } from "next/navigation";
+import { useDispatch, useSelector } from "react-redux";
+import { toggle } from "../../redux/slices/toggle-mobile-nav";
 
 const SideBar = () => {
     const pathname = usePathname();
+    const ref = useRef(null);
+    const isMenuOpen = useSelector((state) => state.toggle.isMenuOpen);
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        const hideNavBar = () => {
+            if (!ref?.current || ref?.current.contains(event.target)) {
+                return;
+            }
+
+            if (isMenuOpen !== false) {
+                dispatch(toggle());
+            }
+        };
+
+        document.addEventListener("click", hideNavBar);
+
+        return () => {
+            document.removeEventListener("click", hideNavBar);
+        };
+    }, [isMenuOpen]);
 
     return (
-        <Wrapper>
-            <div className="inner-container">
+        <Wrapper $isOpen={isMenuOpen}>
+            <div className="inner-container" ref={ref}>
                 <div>
                     <Logo>
                         <Image

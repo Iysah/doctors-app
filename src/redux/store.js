@@ -1,10 +1,9 @@
-// store.js
 import { configureStore } from "@reduxjs/toolkit";
-// import someReducer from './reducers/someReducer';
+import toggleMobileNav from "./slices/toggle-mobile-nav";
 
 const store = configureStore({
     reducer: {
-        // someReducer: someReducer,
+        toggle: toggleMobileNav,
     },
 });
 

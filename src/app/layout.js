@@ -1,13 +1,21 @@
+"use client";
+
+import store from "../redux/store";
 import "../styles/globals.css";
 
 import StyledComponentsRegistry from "./lib/registry";
+import { Provider } from "react-redux";
 
 export default function RootLayout({ children }) {
     return (
-        <html>
-            <body>
-                <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-            </body>
-        </html>
+        <Provider store={store}>
+            <html>
+                <body>
+                    <StyledComponentsRegistry>
+                        {children}
+                    </StyledComponentsRegistry>
+                </body>
+            </html>
+        </Provider>
     );
 }
