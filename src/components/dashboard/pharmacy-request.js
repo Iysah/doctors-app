@@ -5,14 +5,16 @@ import React from "react";
 import {
     Grid,
     GridContainer,
-    GridOne,
     Heading1,
     Heading2,
     RequestCard,
     Wrapper,
 } from "../../styles/dashboard.style";
+import { useRouter } from "next/navigation";
 
 const PharmacyRequest = () => {
+    const router = useRouter();
+
     return (
         <Wrapper>
             <Heading1>Pharmacy Request</Heading1>
@@ -48,42 +50,105 @@ const PharmacyRequest = () => {
                         <p className="med grid-heading no-border">Medication</p>
 
                         {/* first row */}
-                        <p className="time border-left">17:14</p>
-                        <p className="info">
+                        <p
+                            className="time border-left"
+                            onClick={() => router.push("/request")}
+                        >
+                            17:14
+                        </p>
+                        <p
+                            className="info"
+                            onClick={() => router.push("/request")}
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad
                         </p>
-                        <p></p>
-                        <p className="patient">Ibrahim Sani</p>
-                        <p className="prescriber">Ben Sani</p>
-                        <p className="med border-right">Paracetamol</p>
+                        <p onClick={() => router.push("/request")}></p>
+                        <p
+                            className="patient"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right"
+                            onClick={() => router.push("/request")}
+                        >
+                            Paracetamol
+                        </p>
 
                         {/* second row */}
                         <p className="time border-left">1:00</p>
-                        <p className="info">
+                        <p
+                            className="info"
+                            onClick={() => router.push("/request")}
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad
                         </p>
-                        <p></p>
-                        <p className="patient">Ibrahim Sani</p>
-                        <p className="prescriber">Ben Sani</p>
-                        <p className="med border-right">Paracetamol</p>
+                        <p onClick={() => router.push("/request")}></p>
+                        <p
+                            className="patient"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right"
+                            onClick={() => router.push("/request")}
+                        >
+                            Paracetamol
+                        </p>
 
                         {/* third row */}
-                        <p className="time border-left border-bottom">
+                        <p
+                            className="time border-left border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
                             Yesterday
                         </p>
-                        <p className="info border-bottom">
+                        <p
+                            className="info border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad
                         </p>
-                        <p className="border-bottom"></p>
-                        <p className="patient border-bottom">Ibrahim Sani</p>
-                        <p className="prescriber border-bottom">Ben Sani</p>
-                        <p className="med border-right border-bottom">
+                        <p
+                            className="border-bottom"
+                            onClick={() => router.push("/request")}
+                        ></p>
+                        <p
+                            className="patient border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
                             Paracetamol
                         </p>
                     </div>
@@ -106,42 +171,110 @@ const PharmacyRequest = () => {
                         <p className="med grid-heading no-border">Medication</p>
 
                         {/* first row */}
-                        <p className="time border-left">17:14</p>
-                        <p className="info">
+                        <p
+                            className="time border-left"
+                            onClick={() => router.push("/request")}
+                        >
+                            17:14
+                        </p>
+                        <p
+                            className="info"
+                            onClick={() => router.push("/request")}
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad
                         </p>
-                        <p></p>
-                        <p className="patient">Ibrahim Sani</p>
-                        <p className="prescriber">Ben Sani</p>
-                        <p className="med border-right">Paracetamol</p>
+                        <p onClick={() => router.push("/request")}></p>
+                        <p
+                            className="patient"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right"
+                            onClick={() => router.push("/request")}
+                        >
+                            Paracetamol
+                        </p>
 
                         {/* second row */}
-                        <p className="time border-left">1:00</p>
-                        <p className="info">
+                        <p
+                            className="time border-left"
+                            onClick={() => router.push("/request")}
+                        >
+                            1:00
+                        </p>
+                        <p
+                            className="info"
+                            onClick={() => router.push("/request")}
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad
                         </p>
-                        <p></p>
-                        <p className="patient">Ibrahim Sani</p>
-                        <p className="prescriber">Ben Sani</p>
-                        <p className="med border-right">Paracetamol</p>
+                        <p onClick={() => router.push("/request")}></p>
+                        <p
+                            className="patient"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right"
+                            onClick={() => router.push("/request")}
+                        >
+                            Paracetamol
+                        </p>
 
                         {/* third row */}
-                        <p className="time border-left border-bottom">
+                        <p
+                            className="time border-left border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
                             Yesterday
                         </p>
-                        <p className="info border-bottom">
+                        <p
+                            className="info border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad
                         </p>
-                        <p className="border-bottom"></p>
-                        <p className="patient border-bottom">Ibrahim Sani</p>
-                        <p className="prescriber border-bottom">Ben Sani</p>
-                        <p className="med border-right border-bottom">
+                        <p
+                            className="border-bottom"
+                            onClick={() => router.push("/request")}
+                        ></p>
+                        <p
+                            className="patient border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
                             Paracetamol
                         </p>
                     </div>
@@ -165,42 +298,110 @@ const PharmacyRequest = () => {
                         <p className="med grid-heading no-border">Medication</p>
 
                         {/* first row */}
-                        <p className="time border-left">17:14</p>
-                        <p className="info">
+                        <p
+                            className="time border-left"
+                            onClick={() => router.push("/request")}
+                        >
+                            17:14
+                        </p>
+                        <p
+                            className="info"
+                            onClick={() => router.push("/request")}
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad
                         </p>
-                        <p></p>
-                        <p className="patient">Ibrahim Sani</p>
-                        <p className="prescriber">Ben Sani</p>
-                        <p className="med border-right">Paracetamol</p>
+                        <p onClick={() => router.push("/request")}></p>
+                        <p
+                            className="patient"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right"
+                            onClick={() => router.push("/request")}
+                        >
+                            Paracetamol
+                        </p>
 
                         {/* second row */}
-                        <p className="time border-left">1:00</p>
-                        <p className="info">
+                        <p
+                            className="time border-left"
+                            onClick={() => router.push("/request")}
+                        >
+                            1:00
+                        </p>
+                        <p
+                            className="info"
+                            onClick={() => router.push("/request")}
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad
                         </p>
-                        <p></p>
-                        <p className="patient">Ibrahim Sani</p>
-                        <p className="prescriber">Ben Sani</p>
-                        <p className="med border-right">Paracetamol</p>
+                        <p onClick={() => router.push("/request")}></p>
+                        <p
+                            className="patient"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right"
+                            onClick={() => router.push("/request")}
+                        >
+                            Paracetamol
+                        </p>
 
                         {/* third row */}
-                        <p className="time border-left border-bottom">
+                        <p
+                            className="time border-left border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
                             Yesterday
                         </p>
-                        <p className="info border-bottom">
+                        <p
+                            className="info border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad
                         </p>
-                        <p className="border-bottom"></p>
-                        <p className="patient border-bottom">Ibrahim Sani</p>
-                        <p className="prescriber border-bottom">Ben Sani</p>
-                        <p className="med border-right border-bottom">
+                        <p
+                            className="border-bottom"
+                            onClick={() => router.push("/request")}
+                        ></p>
+                        <p
+                            className="patient border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
                             Paracetamol
                         </p>
                     </div>
@@ -214,77 +415,212 @@ const PharmacyRequest = () => {
                     <div className="grid">
                         {/* first row */}
                         <p className="time border-left">17:14</p>
-                        <p className="info">
+                        <p
+                            className="info"
+                            onClick={() => router.push("/request")}
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad
                         </p>
-                        <p></p>
-                        <p className="patient">Ibrahim Sani</p>
-                        <p className="prescriber">Ben Sani</p>
-                        <p className="med border-right">Paracetamol</p>
+                        <p onClick={() => router.push("/request")}></p>
+                        <p
+                            className="patient"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right"
+                            onClick={() => router.push("/request")}
+                        >
+                            Paracetamol
+                        </p>
 
                         {/* second row */}
-                        <p className="time border-left">1:00</p>
-                        <p className="info">
+                        <p
+                            className="time border-left"
+                            onClick={() => router.push("/request")}
+                        >
+                            1:00
+                        </p>
+                        <p
+                            className="info"
+                            onClick={() => router.push("/request")}
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad
                         </p>
-                        <p></p>
-                        <p className="patient">Ibrahim Sani</p>
-                        <p className="prescriber">Ben Sani</p>
-                        <p className="med border-right">Paracetamol</p>
+                        <p onClick={() => router.push("/request")}></p>
+                        <p
+                            className="patient"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right"
+                            onClick={() => router.push("/request")}
+                        >
+                            Paracetamol
+                        </p>
 
                         {/* third row */}
-                        <p className="time border-left">Yesterday</p>
-                        <p className="info">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad
-                        </p>
-                        <p className=""></p>
-                        <p className="patient ">Ibrahim Sani</p>
-                        <p className="prescriber">Ben Sani</p>
-                        <p className="med border-right">Paracetamol</p>
-
-                        {/* first row */}
-                        <p className="time border-left">17:14</p>
-                        <p className="info">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad
-                        </p>
-                        <p></p>
-                        <p className="patient">Ibrahim Sani</p>
-                        <p className="prescriber">Ben Sani</p>
-                        <p className="med border-right">Paracetamol</p>
-
-                        {/* second row */}
-                        <p className="time border-left">1:00</p>
-                        <p className="info">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad
-                        </p>
-                        <p></p>
-                        <p className="patient">Ibrahim Sani</p>
-                        <p className="prescriber">Ben Sani</p>
-                        <p className="med border-right">Paracetamol</p>
-
-                        {/* third row */}
-                        <p className="time border-left border-bottom">
+                        <p
+                            className="time border-left"
+                            onClick={() => router.push("/request")}
+                        >
                             Yesterday
                         </p>
-                        <p className="info border-bottom">
+                        <p
+                            className="info"
+                            onClick={() => router.push("/request")}
+                        >
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor incididunt ut labore et
                             dolore magna aliqua. Ut enim ad
                         </p>
-                        <p className="border-bottom"></p>
-                        <p className="patient border-bottom">Ibrahim Sani</p>
-                        <p className="prescriber border-bottom">Ben Sani</p>
-                        <p className="med border-right border-bottom">
+                        <p
+                            className=""
+                            onClick={() => router.push("/request")}
+                        ></p>
+                        <p
+                            className="patient"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right"
+                            onClick={() => router.push("/request")}
+                        >
+                            Paracetamol
+                        </p>
+
+                        {/* first row */}
+                        <p
+                            className="time border-left"
+                            onClick={() => router.push("/request")}
+                        >
+                            17:14
+                        </p>
+                        <p
+                            className="info"
+                            onClick={() => router.push("/request")}
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad
+                        </p>
+                        <p onClick={() => router.push("/request")}></p>
+                        <p
+                            className="patient"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right"
+                            onClick={() => router.push("/request")}
+                        >
+                            Paracetamol
+                        </p>
+
+                        {/* second row */}
+                        <p
+                            className="time border-left"
+                            onClick={() => router.push("/request")}
+                        >
+                            1:00
+                        </p>
+                        <p
+                            className="info"
+                            onClick={() => router.push("/request")}
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad
+                        </p>
+                        <p onClick={() => router.push("/request")}></p>
+                        <p
+                            className="patient"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right"
+                            onClick={() => router.push("/request")}
+                        >
+                            Paracetamol
+                        </p>
+
+                        {/* third row */}
+                        <p
+                            className="time border-left border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
+                            Yesterday
+                        </p>
+                        <p
+                            className="info border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad
+                        </p>
+                        <p
+                            className="border-bottom"
+                            onClick={() => router.push("/request")}
+                        ></p>
+                        <p
+                            className="patient border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ibrahim Sani
+                        </p>
+                        <p
+                            className="prescriber border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
+                            Ben Sani
+                        </p>
+                        <p
+                            className="med border-right border-bottom"
+                            onClick={() => router.push("/request")}
+                        >
                             Paracetamol
                         </p>
                     </div>

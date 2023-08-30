@@ -25,7 +25,7 @@
         "**/*.ts",
         "**/*.tsx",
         "src/app/(dashboard)/page.js",
-        "src/components/dashboard/layout.js"
+        "src/components/dashboard/layouts/layout.js"
     ],
     "exclude": ["node_modules"]
 }

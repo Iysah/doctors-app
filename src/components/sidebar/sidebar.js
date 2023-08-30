@@ -11,12 +11,14 @@ import {
 } from "../svg-icons";
 import Image from "next/image";
 import { FullLogo } from "../../assets/index";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { toggle } from "../../redux/slices/toggle-mobile-nav";
 
 const SideBar = () => {
     const pathname = usePathname();
+    const router = useRouter();
+
     const ref = useRef(null);
     const isMenuOpen = useSelector((state) => state.toggle.isMenuOpen);
 
@@ -40,6 +42,37 @@ const SideBar = () => {
         };
     }, [isMenuOpen]);
 
+    //change current route
+    const changeRoute = (key) => {
+        dispatch(toggle());
+
+        switch (key) {
+            case "/":
+                router.push(key);
+                break;
+
+            case "/chat":
+                router.push(key);
+                break;
+
+            case "/patient":
+                router.push(key);
+                break;
+
+            case "/hmo-authorization":
+                router.push(key);
+                break;
+
+            case "/pending-prescribers":
+                router.push(key);
+                break;
+
+            default:
+                router.push("/");
+                break;
+        }
+    };
+
     return (
         <Wrapper $isOpen={isMenuOpen}>
             <div className="inner-container" ref={ref}>
@@ -55,30 +88,47 @@ const SideBar = () => {
 
                     <Routes>
                         <div className="first">
-                            <Route $active={pathname === "/"}>
+                            <Route
+                                $active={pathname === "/"}
+                                onClick={() => changeRoute("/")}
+                            >
                                 <PharmacyIcon />
                                 <span className="pr-first">
                                     Pharmacy Request
                                 </span>
                             </Route>
 
-                            <Route $active={pathname === "/chat"}>
+                            <Route
+                                $active={pathname === "/chat"}
+                                onClick={() => changeRoute("/chat")}
+                            >
                                 <ChatIcon />
                                 <span>Chat</span>
                             </Route>
 
-                            <Route $active={pathname === "/Patient"}>
+                            <Route
+                                $active={pathname === "/Patient"}
+                                onClick={() => changeRoute("/patient")}
+                            >
                                 <PatientIcon />
                                 <span>Patient</span>
                             </Route>
 
-                            <Route $active={pathname === "/hmo-authorization"}>
+                            <Route
+                                $active={pathname === "/hmo-authorization"}
+                                onClick={() =>
+                                    changeRoute("/hmo-authorization")
+                                }
+                            >
                                 <HMOAuthorizationIcon />
                                 <span>HMO Authorization</span>
                             </Route>
 
                             <Route
                                 $active={pathname === "/pending-prescribers"}
+                                onClick={() =>
+                                    changeRoute("/pending-prescribers")
+                                }
                             >
                                 <PendingPrescribersIcon />
                                 <span>Pending Prescribers</span>

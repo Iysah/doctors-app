@@ -1,6 +1,6 @@
 import React from "react";
-import LandingLayout from "../../components/dashboard/layout";
-import PharmacyRequest from '../../components/dashboard/pharmacy-request'
+import LandingLayout from "../../components/dashboard/layouts/main";
+import PharmacyRequest from "../../components/dashboard/pharmacy-request";
 
 const IndexPage = () => {
     return (

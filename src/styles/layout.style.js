@@ -6,4 +6,6 @@ export const Wrapper = styled.div`
     min-height: 100vh;
 `;
 
-export const ChildrenContainer = styled.div``;
+export const ChildrenContainer = styled.div`
+    width: 100%;
+`;

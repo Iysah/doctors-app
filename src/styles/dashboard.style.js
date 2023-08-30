@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
     @media screen and (max-width: 1000px) {
         max-width: initial;
         padding: 110px 35px 50px;
-        width: 100vw;
+        width: 100%;
     }
 
     @media screen and (max-width: 416px) {
@@ -129,6 +129,10 @@ export const Grid = styled.div`
             grid-template-columns: 1fr 2fr 0fr repeat(3, 1fr);
         }
 
+        @media screen and (max-width: 385px) {
+            grid-template-columns: 1fr 1.9fr 0fr 1.625fr repeat(2, 1fr);
+        }
+
         p {
             border-top: 1px solid rgba(34, 34, 34, 0.25);
             color: rgba(34, 34, 34, 0.7);
@@ -184,5 +188,45 @@ export const Grid = styled.div`
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+    }
+`;
+
+export const BackButton = styled.button`
+    align-items: center;
+    color: rgba(51, 51, 51, 0.7);
+    column-gap: 10px;
+    display: flex;
+    font-family: "Poppins";
+    font-size: 17px;
+    font-weight: 400;
+
+    @media screen and (max-width: 480px) {
+        svg {
+            height: 15px;
+            width: 13px;
+        }
+        font-size: 13px;
+    }
+`;
+
+export const ReplyButton = styled.button`
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #222;
+    color: rgba(51, 51, 51, 0.7);
+    column-gap: 15px;
+    display: flex;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 25px 6px 18px;
+
+    @media screen and (max-width: 480px) {
+        svg {
+            height: 19px;
+            width: 19px;
+        }
+        font-size: 12px;
+        /* padding: 6px 25px 8px 18px; */
     }
 `;

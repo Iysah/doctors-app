@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
     background-color: #fff;
     position: fixed;
     top: 0;
-    padding: 20px;
+    padding: 15px;
     padding-right: 50px;
     width: calc(100vw - 240px);
 
@@ -108,4 +108,26 @@ export const User = styled.div`
     @media screen and (max-width: 1000px) {
         display: none;
     }
+`;
+
+//--|||| Header Without Sort Input ||||--//
+
+export const WrapperWithoutSort = styled.div`
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    padding-right: 50px;
+    width: 100%;
+
+    @media screen and (max-width: 1000px) {
+        padding: 15px 25px;
+    }
+`;
+
+export const InnerContainerWithoutSort = styled.div`
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
 `;
