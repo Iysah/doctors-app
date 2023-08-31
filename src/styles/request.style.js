@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
     width: 100%;
 
     @media screen and (max-width: 1000px) {
-        padding: 110px 6vw 50px;
+        padding: 110px 6vw 100px;
     }
 `;
 

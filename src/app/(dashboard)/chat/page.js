@@ -1,5 +1,5 @@
 import React from "react";
-import Chat from "../../../components/dashboard/chat/chat";
+import Chat from "../../../components/dashboard/chat";
 import LayoutWithoutsort from "../../../components/dashboard/layouts/layout-without-sort";
 
 const Page = () => {

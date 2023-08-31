@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     width: 100%;
 
     @media screen and (max-width: 1000px) {
-        padding: 110px 6vw 50px;
+        padding: 110px 6vw 100px;
     }
 `;
 
@@ -30,6 +30,14 @@ export const SearchBar = styled.label`
     column-gap: 20px;
     display: flex;
     padding: 10px;
+    @media screen and (max-width: 480px) {
+        padding: 8px;
+
+        svg {
+            height: 14px;
+            width: 14px;
+        }
+    }
 
     input {
         color: #ccc;
@@ -75,7 +83,6 @@ export const ChatCard = styled.div`
     background: #fff;
     box-shadow: 2px 5px 16px 0px rgba(0, 0, 0, 0.25);
     display: flex;
-    justify-content: center;
     margin-bottom: 30px;
     padding: 20px;
 
@@ -127,6 +134,10 @@ export const ChatCard = styled.div`
                 font-size: 16px;
             }
         }
+    }
+
+    .avatar.light-green {
+        background-color: #40b36e;
     }
 
     h2 {

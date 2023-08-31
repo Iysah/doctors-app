@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderOnlyLayout from "../../../components/dashboard/layouts/header-only";
-import Request from "../../../components/dashboard/request/request";
+import Request from "../../../components/dashboard/request";
 
 const Page = () => {
     return (

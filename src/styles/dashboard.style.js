@@ -3,12 +3,12 @@ import { styled } from "styled-components";
 export const Wrapper = styled.div`
     /* height(100px) of header plus 30px padding for top */
 
-    padding: 130px 35px 50px;
+    padding: 130px 6vw 50px;
     max-width: calc(100vw - 285px);
 
     @media screen and (max-width: 1000px) {
         max-width: initial;
-        padding: 110px 35px 50px;
+        padding: 110px 6vw 50px;
         width: 100%;
     }
 
@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
         padding: 110px 20px 50px;
     }
 
-    @media screen and (max-width: 330px) {
+    @media screen and (max-width: 380px) {
         padding: 110px 16px 50px;
     }
 `;
@@ -205,7 +205,7 @@ export const BackButton = styled.button`
             height: 15px;
             width: 13px;
         }
-        font-size: 13px;
+        font-size: 14px;
     }
 `;
 

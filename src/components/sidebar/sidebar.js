@@ -107,7 +107,7 @@ const SideBar = () => {
                             </Route>
 
                             <Route
-                                $active={pathname === "/Patient"}
+                                $active={pathname === "/patient"}
                                 onClick={() => changeRoute("/patient")}
                             >
                                 <PatientIcon />

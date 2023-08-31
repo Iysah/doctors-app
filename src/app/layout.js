@@ -9,7 +9,7 @@ import { Provider } from "react-redux";
 export default function RootLayout({ children }) {
     return (
         <Provider store={store}>
-            <html>
+            <html lang="en">
                 <body>
                     <StyledComponentsRegistry>
                         {children}
