@@ -47,25 +47,21 @@ git clone https://github.com/Iysah/doctors-app.git
 
 2. Navigate to the project directory:
 
-bash
-cd doctors-app
+```cd doctors-app```
 
 
 3. Install the required dependencies:
 
-bash
-npm install
+```npm install```
 
-
-4. Run the app on an emulator or a physical device:
-
-bash
-npx run dev  # run on terminal
+4. Run this to view locally on browser:
+   
+``` npx run dev```  # run on terminal
 
 
 ## Usage
 
-Once doctors-app is up and running, you can start creating stickers using the following steps:
+Once doctors-app is up and running, you can start viewing the following pages:
 
 1. Login page - [https://theraswift-doctors.netlify.app/](https://theraswift-doctors.netlify.app/auth/login)
    
