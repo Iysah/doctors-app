@@ -127,3 +127,9 @@ export const Prescribe = styled.button`
         font-size: 16px;
     }
 `;
+
+//----------------------Prescribe Page----------------------//
+
+export const SumbitForPrescribe = styled(Sumbit)`
+    margin: 20px 0;
+`;

@@ -1,30 +1,45 @@
 {
   "pages": {
+    "/(dashboard)/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(dashboard)/page": [
+    "/(dashboard)/chat/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/page.js"
+      "static/chunks/app/(dashboard)/chat/page.js"
     ],
-    "/(dashboard)/patient/page": [
+    "/(dashboard)/patients/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/patient/page.js"
+      "static/chunks/app/(dashboard)/patients/page.js"
     ],
-    "/(dashboard)/add-patient/page": [
+    "/(dashboard)/patients/add-patient/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/add-patient/page.js"
+      "static/chunks/app/(dashboard)/patients/add-patient/page.js"
+    ],
+    "/(dashboard)/patients/patient/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/patients/patient/page.js"
     ],
     "/(dashboard)/request/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/request/page.js"
+    ],
+    "/(dashboard)/patients/prescribe/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/patients/prescribe/page.js"
     ]
   }
 }

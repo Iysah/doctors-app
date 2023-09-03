@@ -1,6 +1,7 @@
 {
-  "/(dashboard)/page": "app/(dashboard)/page.js",
-  "/(dashboard)/patient/page": "app/(dashboard)/patient/page.js",
-  "/(dashboard)/add-patient/page": "app/(dashboard)/add-patient/page.js",
-  "/(dashboard)/request/page": "app/(dashboard)/request/page.js"
+  "/(dashboard)/chat/page": "app/(dashboard)/chat/page.js",
+  "/(dashboard)/patients/page": "app/(dashboard)/patients/page.js",
+  "/(dashboard)/patients/patient/page": "app/(dashboard)/patients/patient/page.js",
+  "/(dashboard)/patients/add-patient/page": "app/(dashboard)/patients/add-patient/page.js",
+  "/(dashboard)/patients/prescribe/page": "app/(dashboard)/patients/prescribe/page.js"
 }

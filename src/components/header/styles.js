@@ -120,6 +120,7 @@ export const WrapperWithoutSort = styled.div`
     padding: 15px;
     padding-right: 50px;
     width: 100%;
+    z-index: 11;
 
     @media screen and (max-width: 1000px) {
         padding: 15px 25px;

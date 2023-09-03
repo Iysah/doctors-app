@@ -55,7 +55,7 @@ const SideBar = () => {
                 router.push(key);
                 break;
 
-            case "/patient":
+            case "/patients":
                 router.push(key);
                 break;
 
@@ -107,8 +107,8 @@ const SideBar = () => {
                             </Route>
 
                             <Route
-                                $active={pathname === "/patient"}
-                                onClick={() => changeRoute("/patient")}
+                                $active={pathname === "/patients"}
+                                onClick={() => changeRoute("/patients")}
                             >
                                 <PatientIcon />
                                 <span>Patient</span>
