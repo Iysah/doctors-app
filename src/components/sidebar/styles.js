@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
 
     position: sticky;
     top: 0;
-    z-index: 11;
+    z-index: 1111;
 
     div.inner-container {
         border-radius: 0px 48px 48px 0px;

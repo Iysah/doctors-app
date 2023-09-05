@@ -86,7 +86,7 @@ const Chat = () => {
 
             <ChatArea>
                 {chats.map((item) => (
-                    <ChatCard>
+                    <ChatCard key={chats.indexOf(item)}>
                         <div className="innercard">
                             <div
                                 className={`avatar ${
@@ -101,7 +101,12 @@ const Chat = () => {
                                 <h2>{item.name}</h2>
 
                                 {item.body.map((chat) => (
-                                    <p className="body">{chat}</p>
+                                    <p
+                                        key={item.body.indexOf(chat)}
+                                        className="body"
+                                    >
+                                        {chat}
+                                    </p>
                                 ))}
 
                                 <p className="time">{item.time}</p>

@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Logo, Route, Routes, Wrapper } from "./styles";
 import {
     ChatIcon,
+    ClaimHMOIcon,
     HMOAuthorizationIcon,
     PatientIcon,
     PendingPrescribersIcon,
@@ -64,6 +65,10 @@ const SideBar = () => {
                 break;
 
             case "/pending-prescribers":
+                router.push(key);
+                break;
+
+            case "/claim-hmo":
                 router.push(key);
                 break;
 
@@ -134,9 +139,13 @@ const SideBar = () => {
                                 <span>Pending Prescribers</span>
                             </Route>
 
-                            {/* <Route $active={pathname === "/"}>
-                        <span></span>
-                    </Route> */}
+                            <Route
+                                $active={pathname === "/claim-hmo"}
+                                onClick={() => changeRoute("/claim-hmo")}
+                            >
+                                <ClaimHMOIcon />
+                                <span>Claim HMO</span>
+                            </Route>
                         </div>
                     </Routes>
                 </div>
