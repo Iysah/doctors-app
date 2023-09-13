@@ -72,81 +72,97 @@ const Patients = () => {
                 </AddButton>
 
                 <Table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Gender</th>
-                            <th>Age</th>
-                            <th>ID</th>
-                            <th>Contact</th>
-                            <th>Department</th>
-                        </tr>
-                    </thead>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Age</th>
+                                <th>ID</th>
+                                <th>Contact</th>
+                                <th>Department</th>
+                            </tr>
+                        </thead>
 
-                    <tbody>
-                        <tr onClick={() => router.push("/patients/patient")}>
-                            <td>Ibrahim Sani</td>
-                            <td>M</td>
-                            <td>24</td>
-                            <td>01946789</td>
-                            <td>09035000000</td>
-                            <td>Medication</td>
-                        </tr>
+                        <tbody>
+                            <tr
+                                onClick={() => router.push("/patients/patient")}
+                            >
+                                <td>Ibrahim Sani</td>
+                                <td>M</td>
+                                <td>24</td>
+                                <td>01946789</td>
+                                <td>09035000000</td>
+                                <td>Medication</td>
+                            </tr>
 
-                        <tr onClick={() => router.push("/patients/patient")}>
-                            <td>Victoria victor</td>
-                            <td>F</td>
-                            <td>34</td>
-                            <td>01946789</td>
-                            <td>09035000000</td>
-                            <td>Medication</td>
-                        </tr>
+                            <tr
+                                onClick={() => router.push("/patients/patient")}
+                            >
+                                <td>Victoria victor</td>
+                                <td>F</td>
+                                <td>34</td>
+                                <td>01946789</td>
+                                <td>09035000000</td>
+                                <td>Medication</td>
+                            </tr>
 
-                        <tr onClick={() => router.push("/patients/patient")}>
-                            <td>Ibrahim Sani</td>
-                            <td>M</td>
-                            <td>24</td>
-                            <td>01946789</td>
-                            <td>09035000000</td>
-                            <td>Medication</td>
-                        </tr>
+                            <tr
+                                onClick={() => router.push("/patients/patient")}
+                            >
+                                <td>Ibrahim Sani</td>
+                                <td>M</td>
+                                <td>24</td>
+                                <td>01946789</td>
+                                <td>09035000000</td>
+                                <td>Medication</td>
+                            </tr>
 
-                        <tr onClick={() => router.push("/patients/patient")}>
-                            <td>Victoria victor</td>
-                            <td>F</td>
-                            <td>34</td>
-                            <td>01946789</td>
-                            <td>09035000000</td>
-                            <td>Medication</td>
-                        </tr>
+                            <tr
+                                onClick={() => router.push("/patients/patient")}
+                            >
+                                <td>Victoria victor</td>
+                                <td>F</td>
+                                <td>34</td>
+                                <td>01946789</td>
+                                <td>09035000000</td>
+                                <td>Medication</td>
+                            </tr>
 
-                        <tr onClick={() => router.push("/patients/patient")}>
-                            <td>Victoria victor</td>
-                            <td>F</td>
-                            <td>34</td>
-                            <td>01946789</td>
-                            <td>09035000000</td>
-                            <td>Medication</td>
-                        </tr>
+                            <tr
+                                onClick={() => router.push("/patients/patient")}
+                            >
+                                <td>Victoria victor</td>
+                                <td>F</td>
+                                <td>34</td>
+                                <td>01946789</td>
+                                <td>09035000000</td>
+                                <td>Medication</td>
+                            </tr>
 
-                        <tr onClick={() => router.push("/patients/patient")}>
-                            <td>Ibrahim Sani</td>
-                            <td>M</td>
-                            <td>24</td>
-                            <td>01946789</td>
-                            <td>09035000000</td>
-                            <td>Medication</td>
-                        </tr>
+                            <tr
+                                onClick={() => router.push("/patients/patient")}
+                            >
+                                <td>Ibrahim Sani</td>
+                                <td>M</td>
+                                <td>24</td>
+                                <td>01946789</td>
+                                <td>09035000000</td>
+                                <td>Medication</td>
+                            </tr>
 
-                        <tr onClick={() => router.push("/patients/patient")}>
-                            <td>Ibrahim Sani</td>
-                            <td>M</td>
-                            <td>24</td>
-                            <td>01946789</td>
-                            <td>09035000000</td>
-                            <td>Medication</td>
-                        </tr>
-                    </tbody>
+                            <tr
+                                onClick={() => router.push("/patients/patient")}
+                            >
+                                <td>Ibrahim Sani</td>
+                                <td>M</td>
+                                <td>24</td>
+                                <td>01946789</td>
+                                <td>09035000000</td>
+                                <td>Medication</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </Table>
             </InnerContainer>
         </Wrapper>

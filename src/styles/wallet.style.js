@@ -197,7 +197,7 @@ export const Table = styled.div`
     padding: 0 25px;
 
     @media screen and (max-width: 768px) {
-        overflow: scroll;
+        overflow: auto;
     }
 
     table {

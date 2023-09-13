@@ -1,10 +1,16 @@
 "use client";
 import React from "react";
-import { Table, Wrapper } from "../../styles/hmo-auth.style";
+import {
+    Chart,
+    MaxContainer,
+    Table,
+    Wrapper,
+} from "../../styles/hmo-auth.style";
 import { InnerContainer, Top } from "../../styles/patients.style";
 import { Filter, SearchBar } from "../../styles/chat.style";
 import { Heading1 } from "../../styles/dashboard.style";
 import { useRouter } from "next/navigation";
+import { Form, Sumbit } from "../../styles/add-patient.style";
 
 const HMOAuthorization = () => {
     const router = useRouter();
@@ -65,94 +71,221 @@ const HMOAuthorization = () => {
                 </Top>
 
                 <Table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th className="date">Date</th>
-                            <th>Status</th>
-                            <th>Prescriber</th>
-                        </tr>
-                    </thead>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th className="date">Date</th>
+                                <th>Status</th>
+                                <th>Prescriber</th>
+                            </tr>
+                        </thead>
 
-                    <tbody>
-                        <tr
-                            onClick={() =>
-                                router.push("/hmo-authorization/info")
-                            }
-                        >
-                            <td>Ibrahim Sani</td>
-                            <td className="date">24/7/2023</td>
-                            <td $status={"pending"}>Pending</td>
-                            <td>Dermatologist</td>
-                        </tr>
+                        <tbody>
+                            <tr
+                                onClick={() =>
+                                    router.push("/hmo-authorization/info")
+                                }
+                            >
+                                <td>Ibrahim Sani</td>
+                                <td className="date">24/7/2023</td>
+                                <td $status={"pending"}>Pending</td>
+                                <td>Dermatologist</td>
+                            </tr>
 
-                        <tr
-                            onClick={() =>
-                                router.push("/hmo-authorization/info")
-                            }
-                        >
-                            <td>Victoria victor</td>
-                            <td className="date">17/8/2023</td>
-                            <td $status={"denied"}>Denied</td>
-                            <td>Gynecologist</td>
-                        </tr>
+                            <tr
+                                onClick={() =>
+                                    router.push("/hmo-authorization/info")
+                                }
+                            >
+                                <td>Victoria victor</td>
+                                <td className="date">17/8/2023</td>
+                                <td $status={"denied"}>Denied</td>
+                                <td>Gynecologist</td>
+                            </tr>
 
-                        <tr
-                            onClick={() =>
-                                router.push("/hmo-authorization/info")
-                            }
-                        >
-                            <td>Ibrahim Sani</td>
-                            <td className="date">5/5/2023</td>
-                            <td>Approved</td>
-                            <td>Dermatologist</td>
-                        </tr>
+                            <tr
+                                onClick={() =>
+                                    router.push("/hmo-authorization/info")
+                                }
+                            >
+                                <td>Ibrahim Sani</td>
+                                <td className="date">5/5/2023</td>
+                                <td>Approved</td>
+                                <td>Dermatologist</td>
+                            </tr>
 
-                        <tr
-                            onClick={() =>
-                                router.push("/hmo-authorization/info")
-                            }
-                        >
-                            <td>Victoria victor</td>
-                            <td className="date">24/7/2023</td>
-                            <td>Approved</td>
-                            <td>Gynecologist</td>
-                        </tr>
+                            <tr
+                                onClick={() =>
+                                    router.push("/hmo-authorization/info")
+                                }
+                            >
+                                <td>Victoria victor</td>
+                                <td className="date">24/7/2023</td>
+                                <td>Approved</td>
+                                <td>Gynecologist</td>
+                            </tr>
 
-                        <tr
-                            onClick={() =>
-                                router.push("/hmo-authorization/info")
-                            }
-                        >
-                            <td>Victoria victor</td>
-                            <td className="date">17/8/2023</td>
-                            <td>Pending</td>
-                            <td>Gynecologist</td>
-                        </tr>
+                            <tr
+                                onClick={() =>
+                                    router.push("/hmo-authorization/info")
+                                }
+                            >
+                                <td>Victoria victor</td>
+                                <td className="date">17/8/2023</td>
+                                <td>Pending</td>
+                                <td>Gynecologist</td>
+                            </tr>
 
-                        <tr
-                            onClick={() =>
-                                router.push("/hmo-authorization/info")
-                            }
-                        >
-                            <td>Ibrahim Sani</td>
-                            <td className="date">20/3/2023</td>
-                            <td>Denied</td>
-                            <td>Dermatologist</td>
-                        </tr>
+                            <tr
+                                onClick={() =>
+                                    router.push("/hmo-authorization/info")
+                                }
+                            >
+                                <td>Ibrahim Sani</td>
+                                <td className="date">20/3/2023</td>
+                                <td>Denied</td>
+                                <td>Dermatologist</td>
+                            </tr>
 
-                        <tr
-                            onClick={() =>
-                                router.push("/hmo-authorization/info")
-                            }
-                        >
-                            <td>Ibrahim Sani</td>
-                            <td className="date">17/8/2023</td>
-                            <td>Denied</td>
-                            <td>Dermatologist</td>
-                        </tr>
-                    </tbody>
+                            <tr
+                                onClick={() =>
+                                    router.push("/hmo-authorization/info")
+                                }
+                            >
+                                <td>Ibrahim Sani</td>
+                                <td className="date">17/8/2023</td>
+                                <td>Denied</td>
+                                <td>Dermatologist</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </Table>
+
+                <Chart></Chart>
+
+                <MaxContainer>
+                    <Heading1>New Prior Authorization</Heading1>
+
+                    <Form>
+                        <label htmlFor="first-name">
+                            <span>
+                                First Name <span className="red">*</span>
+                            </span>
+                            <input
+                                id="first-name"
+                                type="text"
+                                placeholder="Enter patient name"
+                            />
+                        </label>
+
+                        <label htmlFor="surname">
+                            <span>
+                                Surname<span className="red">*</span>
+                            </span>
+                            <input
+                                id="surname"
+                                type="text"
+                                placeholder="Enter patient surname"
+                            />
+                        </label>
+
+                        <label htmlFor="tel">
+                            <span>
+                                Phone Number<span className="red">*</span>
+                            </span>
+                            <input
+                                id="tel"
+                                type="tel"
+                                placeholder="Enter phone number"
+                            />
+                        </label>
+
+                        <label htmlFor="enrolee">
+                            <span>
+                                Enrolee Number<span className="red">*</span>
+                            </span>
+                            <input
+                                id="enrolee"
+                                type="text"
+                                placeholder="Enter enrolee number"
+                            />
+                        </label>
+
+                        <label htmlFor="email">
+                            <span>
+                                Email Address<span className="red">*</span>
+                            </span>
+                            <input
+                                id="email"
+                                type="email"
+                                placeholder="Enter email address"
+                            />
+                        </label>
+
+                        <label htmlFor="address">
+                            <span>
+                                Address<span className="red">*</span>
+                            </span>
+                            <input
+                                id="address"
+                                type="text"
+                                placeholder="Enter address"
+                            />
+                        </label>
+
+                        <label htmlFor="code">
+                            <span>
+                                Medical Code<span className="red">*</span>
+                            </span>
+                            <input
+                                id="code"
+                                type="text"
+                                placeholder="Enter code"
+                            />
+                        </label>
+
+                        <label htmlFor="record" className="record">
+                            <span>
+                                Medical Record<span className="red">*</span>
+                            </span>
+                            <input id="record" type="file" />
+                            <div className="input">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="40"
+                                    height="40"
+                                    viewBox="0 0 56 56"
+                                    fill="none"
+                                >
+                                    <g clipPath="url(#clip0_636_14004)">
+                                        <path
+                                            d="M45.6595 24.2631H44.9943C44.134 15.9012 37.0452 9.35156 28.4539 9.35156C19.8625 9.35156 12.7738 15.9012 11.9135 24.2631H11.2482C5.55886 24.2631 0.924805 28.8972 0.924805 34.5865C0.924805 40.2759 5.55886 44.9099 11.2482 44.9099H45.6595C51.3489 44.9099 55.9829 40.2759 55.9829 34.5865C55.9829 28.8972 51.3489 24.2631 45.6595 24.2631ZM38.3185 28.3007C37.9743 28.6678 37.5155 28.8513 37.0567 28.8513C36.6323 28.8513 36.2194 28.7022 35.8867 28.3925L30.1744 23.0587V37.4542C30.1744 38.4062 29.4059 39.1747 28.4539 39.1747C27.5018 39.1747 26.7333 38.4062 26.7333 37.4542V23.0587L21.021 28.3925C20.3328 29.0348 19.2431 29.0004 18.5893 28.3007C17.9469 27.6125 17.9814 26.5228 18.6811 25.869L27.2839 17.8397C27.9377 17.2318 28.97 17.2318 29.6239 17.8397L38.2267 25.869C38.9264 26.5228 38.9608 27.6125 38.3185 28.3007Z"
+                                            fill="#0F5D52"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_636_14004">
+                                            <rect
+                                                width="55.0581"
+                                                height="55.0581"
+                                                fill="white"
+                                                transform="translate(0.924805 0.175781)"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>Upload</span>
+                            </div>
+                        </label>
+
+                        <div className="error-message">
+                            Required file size is a maximum of 5 mb*
+                        </div>
+
+                        <Sumbit type="submit">Submit</Sumbit>
+                    </Form>
+                </MaxContainer>
             </InnerContainer>
         </Wrapper>
     );

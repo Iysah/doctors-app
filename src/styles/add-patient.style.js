@@ -25,6 +25,10 @@ export const Form = styled.div`
             }
         }
 
+        ::placeholder {
+            color: rgba(34, 34, 34, 0.4);
+        }
+
         input {
             border-radius: 8px;
             border: 2.065px solid rgba(17, 71, 124, 0.2);
