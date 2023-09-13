@@ -1,7 +1,7 @@
 {
-  "/(dashboard)/patients/page": "app/(dashboard)/patients/page.js",
+  "/(dashboard)/chat/page": "app/(dashboard)/chat/page.js",
   "/(dashboard)/hmo-authorization/page": "app/(dashboard)/hmo-authorization/page.js",
   "/(dashboard)/settings/page": "app/(dashboard)/settings/page.js",
-  "/(dashboard)/chat/page": "app/(dashboard)/chat/page.js",
+  "/(dashboard)/patients/page": "app/(dashboard)/patients/page.js",
   "/(dashboard)/hmo-authorization/info/page": "app/(dashboard)/hmo-authorization/info/page.js"
 }
