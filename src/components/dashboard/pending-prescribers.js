@@ -63,7 +63,9 @@ const PendingPrescribers = () => {
                         <tr>
                             <th>Following</th>
                             <th>Prescriber</th>
-                            <th>Registration No.</th>
+                            <th>
+                                <p className="elipsis">Registration No.</p>
+                            </th>
                         </tr>
                     </thead>
 

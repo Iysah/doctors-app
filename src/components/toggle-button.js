@@ -22,6 +22,11 @@ export const Toggle = styled.button`
     padding: 4px 6px;
     width: 50px;
 
+    @media screen and (max-width: 480px) {
+        padding: 2px 4px;
+        width: 35px;
+    }
+
     .inner {
         background-color: #fff;
         border-radius: 50%;
@@ -31,5 +36,13 @@ export const Toggle = styled.button`
         transform: ${({ $active }) =>
             $active ? "translateX(0)" : "translateX(22px)"};
         transition: transform ease 200ms;
+
+        @media screen and (max-width: 480px) {
+            height: 12px;
+            width: 12px;
+
+            transform: ${({ $active }) =>
+                $active ? "translateX(0)" : "translateX(15px)"};
+        }
     }
 `;

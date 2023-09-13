@@ -96,7 +96,7 @@ export const Table = styled.table`
 
     td,
     th {
-        padding: 11px 2px;
+        padding: 12px 2px;
     }
 
     @media screen and (max-width: 768px) {

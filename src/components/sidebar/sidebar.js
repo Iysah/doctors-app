@@ -72,6 +72,14 @@ const SideBar = () => {
                 router.push(key);
                 break;
 
+            case "/wallet":
+                router.push(key);
+                break;
+
+            case "/settings":
+                router.push(key);
+                break;
+
             default:
                 router.push("/");
                 break;
@@ -152,12 +160,18 @@ const SideBar = () => {
 
                 <Routes>
                     <div className="second">
-                        <Route $active={pathname === "/wallet-management"}>
+                        <Route
+                            $active={pathname === "/wallet"}
+                            onClick={() => changeRoute("/wallet")}
+                        >
                             <WalletManagementIcon />
                             <span>Wallet Management</span>
                         </Route>
 
-                        <Route $active={pathname === "/settings"}>
+                        <Route
+                            $active={pathname === "/settings"}
+                            onClick={() => changeRoute("/settings")}
+                        >
                             <SettingsIcon />
                             <span>Settings</span>
                         </Route>

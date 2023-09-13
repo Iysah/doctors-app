@@ -15,6 +15,10 @@ export const Prompt = styled.div`
             max-width: 600px;
             text-align: center;
         }
+
+        @media screen and (max-width: 480px) {
+            font-size: 15px;
+        }
     }
 `;
 
@@ -26,6 +30,17 @@ export const Table = styled.table`
         width: 100%;
     }
 
+    p.elipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 70%;
+
+        @media screen and (max-width: 350px) {
+            width: 70px;
+        }
+    }
+
     th {
         color: #222;
         font-size: 20px;
@@ -34,6 +49,10 @@ export const Table = styled.table`
 
         @media screen and (max-width: 768px) {
             font-size: 18px;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 15px;
         }
     }
 
@@ -45,6 +64,10 @@ export const Table = styled.table`
 
         @media screen and (max-width: 768px) {
             font-size: 16px;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 12px;
         }
     }
 `;

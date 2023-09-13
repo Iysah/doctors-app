@@ -11,45 +11,50 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(dashboard)/claim-hmo/page": [
+    "/(dashboard)/settings/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/claim-hmo/page.js"
+      "static/chunks/app/(dashboard)/settings/page.js"
     ],
-    "/(dashboard)/chat/page": [
+    "/(dashboard)/wallet/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/chat/page.js"
-    ],
-    "/(dashboard)/hmo-authorization/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/hmo-authorization/page.js"
+      "static/chunks/app/(dashboard)/wallet/page.js"
     ],
     "/(dashboard)/pending-prescribers/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/pending-prescribers/page.js"
     ],
+    "/(dashboard)/claim-hmo/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/claim-hmo/page.js"
+    ],
     "/(dashboard)/patients/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/patients/page.js"
     ],
-    "/(dashboard)/request/page": [
+    "/(dashboard)/hmo-authorization/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/request/page.js"
+      "static/chunks/app/(dashboard)/hmo-authorization/page.js"
     ],
     "/(dashboard)/patients/patient/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/patients/patient/page.js"
     ],
-    "/(dashboard)/patients/prescribe/page": [
+    "/(dashboard)/chat/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/patients/prescribe/page.js"
+      "static/chunks/app/(dashboard)/chat/page.js"
+    ],
+    "/(dashboard)/hmo-authorization/info/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/hmo-authorization/info/page.js"
     ]
   }
 }
