@@ -31,7 +31,7 @@ export const Form = styled.div`
 
         input {
             border-radius: 8px;
-            border: 2.065px solid rgba(17, 71, 124, 0.2);
+            border: 2px solid rgba(17, 71, 124, 0.2);
             background: #fff;
             color: rgba(34, 34, 34, 0.4);
             display: block;
@@ -42,6 +42,8 @@ export const Form = styled.div`
             width: 100%;
 
             @media screen and (max-width: 768px) {
+                border-radius: 6px;
+                border: 1px solid rgba(17, 71, 124, 0.2);
                 font-size: 14px;
             }
 

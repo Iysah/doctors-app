@@ -2,13 +2,14 @@
 import React from "react";
 import {
     Chart,
+    ColoredTd,
     MaxContainer,
     Table,
     Wrapper,
 } from "../../styles/hmo-auth.style";
 import { InnerContainer, Top } from "../../styles/patients.style";
 import { Filter, SearchBar } from "../../styles/chat.style";
-import { Heading1 } from "../../styles/dashboard.style";
+import { Heading1, Heading2 } from "../../styles/dashboard.style";
 import { useRouter } from "next/navigation";
 import { Form, Sumbit } from "../../styles/add-patient.style";
 
@@ -89,7 +90,9 @@ const HMOAuthorization = () => {
                             >
                                 <td>Ibrahim Sani</td>
                                 <td className="date">24/7/2023</td>
-                                <td $status={"pending"}>Pending</td>
+                                <ColoredTd $status={"pending"}>
+                                    Pending
+                                </ColoredTd>
                                 <td>Dermatologist</td>
                             </tr>
 
@@ -100,7 +103,7 @@ const HMOAuthorization = () => {
                             >
                                 <td>Victoria victor</td>
                                 <td className="date">17/8/2023</td>
-                                <td $status={"denied"}>Denied</td>
+                                <ColoredTd $status={"denied"}>Denied</ColoredTd>
                                 <td>Gynecologist</td>
                             </tr>
 
@@ -111,7 +114,9 @@ const HMOAuthorization = () => {
                             >
                                 <td>Ibrahim Sani</td>
                                 <td className="date">5/5/2023</td>
-                                <td>Approved</td>
+                                <ColoredTd $status="approved">
+                                    Approved
+                                </ColoredTd>
                                 <td>Dermatologist</td>
                             </tr>
 
@@ -122,7 +127,9 @@ const HMOAuthorization = () => {
                             >
                                 <td>Victoria victor</td>
                                 <td className="date">24/7/2023</td>
-                                <td>Approved</td>
+                                <ColoredTd $status="approved">
+                                    Approved
+                                </ColoredTd>
                                 <td>Gynecologist</td>
                             </tr>
 
@@ -133,7 +140,9 @@ const HMOAuthorization = () => {
                             >
                                 <td>Victoria victor</td>
                                 <td className="date">17/8/2023</td>
-                                <td>Pending</td>
+                                <ColoredTd $status={"pending"}>
+                                    Pending
+                                </ColoredTd>
                                 <td>Gynecologist</td>
                             </tr>
 
@@ -144,7 +153,7 @@ const HMOAuthorization = () => {
                             >
                                 <td>Ibrahim Sani</td>
                                 <td className="date">20/3/2023</td>
-                                <td>Denied</td>
+                                <ColoredTd $status={"denied"}>Denied</ColoredTd>
                                 <td>Dermatologist</td>
                             </tr>
 
@@ -155,14 +164,62 @@ const HMOAuthorization = () => {
                             >
                                 <td>Ibrahim Sani</td>
                                 <td className="date">17/8/2023</td>
-                                <td>Denied</td>
+                                <ColoredTd $status={"denied"}>Denied</ColoredTd>
                                 <td>Dermatologist</td>
                             </tr>
                         </tbody>
                     </table>
                 </Table>
 
-                <Chart></Chart>
+                <Chart>
+                    <div className="wrapper">
+                        <Heading2>Overall Status</Heading2>
+
+                        <div className="chart">
+                            <div className="x-axis">
+                                <span>25 </span>
+                                <div className="line"></div>
+                            </div>
+                            <div className="x-axis">
+                                <span>20 </span>
+                                <div className="line"></div>
+                            </div>
+                            <div className="x-axis">
+                                <span>15 </span>
+                                <div className="line"></div>
+                            </div>
+                            <div className="x-axis">
+                                <span>10 </span>
+                                <div className="line"></div>
+                            </div>
+                            <div className="x-axis">
+                                <span>5 </span>
+                                <div className="line"></div>
+                            </div>
+                            <div className="x-axis last">
+                                <span>0 </span>
+                                <div className="line"></div>
+                            </div>
+
+                            <div className="absolute">
+                                <div className="bar-container">
+                                    <div className="bar red"></div>
+                                    <p className="title">Denied</p>
+                                </div>
+
+                                <div className="bar-container">
+                                    <div className="bar grey"></div>
+                                    <p className="title">Pending</p>
+                                </div>
+
+                                <div className="bar-container">
+                                    <div className="bar green"></div>
+                                    <p className="title">Approved</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Chart>
 
                 <MaxContainer>
                     <Heading1>New Prior Authorization</Heading1>

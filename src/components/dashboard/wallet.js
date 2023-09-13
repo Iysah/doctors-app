@@ -2,6 +2,7 @@
 import React from "react";
 import {
     BorderedButton,
+    Chart,
     DetailsButtons,
     FirstContainer,
     GreenButton,
@@ -12,7 +13,9 @@ import {
     Wrapper,
 } from "../../styles/wallet.style";
 
+
 const Wallet = () => {
+    
     return (
         <Wrapper>
             <FirstContainer>
@@ -79,6 +82,10 @@ const Wallet = () => {
                         </BorderedButton>
                     </DetailsButtons>
                 </WalletDetails>
+
+                <Chart>
+                  
+                </Chart>
             </FirstContainer>
 
             <SecondContainer>

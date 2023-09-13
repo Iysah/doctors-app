@@ -1,7 +1,7 @@
 {
-  "/(dashboard)/page": "app/(dashboard)/page.js",
-  "/(dashboard)/patients/page": "app/(dashboard)/patients/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(dashboard)/wallet/page": "app/(dashboard)/wallet/page.js",
   "/(dashboard)/hmo-authorization/page": "app/(dashboard)/hmo-authorization/page.js",
-  "/(dashboard)/chat/page": "app/(dashboard)/chat/page.js",
-  "/(dashboard)/hmo-authorization/info/page": "app/(dashboard)/hmo-authorization/info/page.js"
+  "/(dashboard)/patients/page": "app/(dashboard)/patients/page.js",
+  "/(dashboard)/patients/patient/page": "app/(dashboard)/patients/patient/page.js"
 }

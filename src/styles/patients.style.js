@@ -63,11 +63,7 @@ export const Table = styled.div`
             }
 
             @media screen and (max-width: 580px) {
-                font-size: 12px;
-            }
-
-            @media screen and (max-width: 378px) {
-                font-size: 10px;
+                font-size: 14px;
             }
 
             th {
@@ -83,20 +79,12 @@ export const Table = styled.div`
             @media screen and (max-width: 768px) {
                 font-size: 14px;
             }
-
-            @media screen and (max-width: 580px) {
-                font-size: 12px;
-            }
-
-            @media screen and (max-width: 378px) {
-                font-size: 10px;
-            }
         }
 
         td,
         th {
             cursor: pointer;
-            padding: 12px 5px;
+            padding: 12px 16px;
             white-space: nowrap;
         }
 

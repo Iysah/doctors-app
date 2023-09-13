@@ -41,11 +41,11 @@ export const Heading2 = styled.h2`
     font-weight: 600;
 
     @media screen and (max-width: 768px) {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     @media screen and (max-width: 570px) {
-        font-size: 14px;
+        font-size: 18px;
     }
 `;
 
