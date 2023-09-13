@@ -26,15 +26,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/patients/patient/page.js"
     ],
+    "/(dashboard)/hmo-authorization/info/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/hmo-authorization/info/page.js"
+    ],
     "/(dashboard)/wallet/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(dashboard)/wallet/page.js"
     ],
-    "/(dashboard)/hmo-authorization/info/page": [
+    "/(dashboard)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(dashboard)/hmo-authorization/info/page.js"
+      "static/chunks/app/(dashboard)/page.js"
+    ],
+    "/(dashboard)/chat/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(dashboard)/chat/page.js"
     ]
   }
 }

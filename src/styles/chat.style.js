@@ -49,6 +49,7 @@ export const SearchBar = styled.label`
         @media screen and (max-width: 480px) {
             font-size: 12px;
             min-width: 150px;
+            max-width: 150px;
         }
     }
 
