@@ -13,13 +13,29 @@ import { Heading1, Heading2 } from "../../styles/dashboard.style";
 import { useRouter } from "next/navigation";
 import { Form, Sumbit } from "../../styles/add-patient.style";
 
-const createChartData = () => {
-    // set the maximum  status value
-    const max_status_value = 50;
+const roundToNearestFive = (value, min_value) => {
+    //For cases where value is too small
+    //set default value to min_value
 
+    if (value <= min_value) {
+        return min_value;
+    }
+    if (value % 5 >= 1) {
+        // Round up to the nearest multiple of 5
+        return Math.ceil(value / 5) * 5;
+    } else {
+        // Round down to the nearest multiple of 5
+        return Math.floor(value / 5) * 5;
+    }
+};
+
+const createChartData = (max) => {
+    const max_status_value = roundToNearestFive(max, 25);
     // set the vertical scale interval
     const interval = max_status_value / 5;
 
+    // In order to keep the number of the horizontal line to 6 interval
+    // I created an array for the values for those line
     const scale_values = [
         0,
         0 + interval,
@@ -35,7 +51,7 @@ const createChartData = () => {
 const HMOAuthorization = () => {
     const router = useRouter();
 
-    console.log(createChartData());
+    console.log(createChartData(235));
     return (
         <Wrapper>
             <InnerContainer>
