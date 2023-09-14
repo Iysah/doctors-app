@@ -13,9 +13,29 @@ import { Heading1, Heading2 } from "../../styles/dashboard.style";
 import { useRouter } from "next/navigation";
 import { Form, Sumbit } from "../../styles/add-patient.style";
 
+const createChartData = () => {
+    // set the maximum  status value
+    const max_status_value = 50;
+
+    // set the vertical scale interval
+    const interval = max_status_value / 5;
+
+    const scale_values = [
+        0,
+        0 + interval,
+        0 + 2 * interval,
+        0 + 3 * interval,
+        0 + 4 * interval,
+        0 + 5 * interval,
+    ];
+
+    return scale_values;
+};
+
 const HMOAuthorization = () => {
     const router = useRouter();
 
+    console.log(createChartData());
     return (
         <Wrapper>
             <InnerContainer>
