@@ -52,6 +52,7 @@ const HMOAuthorization = () => {
     const router = useRouter();
 
     console.log(createChartData(235));
+
     return (
         <Wrapper>
             <InnerContainer>
