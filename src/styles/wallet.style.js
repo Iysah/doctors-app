@@ -13,8 +13,15 @@ export const Wrapper = styled.div`
 `;
 
 export const FirstContainer = styled.div`
+    align-items: center;
+    column-gap: 25px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1440px) {
+        flex-direction: column;
+        row-gap: 100px;
+    }
 `;
 
 export const WalletDetails = styled.div`
@@ -25,13 +32,20 @@ export const WalletDetails = styled.div`
     display: flex;
     flex-direction: column;
     padding: 30px 35px 40px 25px;
+    height: 100%;
+    width: 50%;
 
-    @media screen and (max-width: 400px) {
-        padding: 25px 30px 35px 20px;
+    @media screen and (max-width: 1440px) {
+        box-shadow: 0px 8px 10px 0px rgba(76, 103, 100, 0.1);
+        width: 100%;
     }
 
     @media screen and (max-width: 768px) {
         width: 100%;
+    }
+
+    @media screen and (max-width: 400px) {
+        padding: 25px 30px 35px 20px;
     }
 
     .wallet-balance {
@@ -161,7 +175,100 @@ export const BorderedButton = styled(button)`
     }
 `;
 
-export const Chart = styled.div``;
+export const Chart = styled.div`
+    white-space: nowrap;
+    width: 50%;
+
+    @media screen and (max-width: 1440px) {
+        width: 100%;
+    }
+
+    .wrapper {
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0px 15px 20px 0px rgba(76, 103, 100, 0.1);
+        padding: 40px 35px;
+        overflow-x: auto;
+    }
+
+    .chart {
+        color: #969696;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 50px;
+        position: relative;
+        min-width: 480px;
+    }
+
+    .x-axis {
+        align-items: center;
+        column-gap: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+
+    .x-axis.last {
+        padding-bottom: 0;
+    }
+
+    .line {
+        background: #e0e0e0;
+        height: 1px;
+
+        width: 100%;
+
+        @media screen and (max-width: 500px) {
+            min-width: initial;
+        }
+    }
+
+    .absolute {
+        column-gap: 8px;
+        display: flex;
+        height: 100%;
+
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .bar-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .bar {
+        border-radius: 50px 50px 0px 0px;
+        background: #1a4942;
+        width: 2.5vw;
+        min-width: 35px;
+    }
+
+    .bar-one {
+        height: calc(20% - 5px);
+    }
+
+    .bar-two {
+        height: calc(80% - 20px);
+    }
+
+    .bar-three {
+        height: calc(60% - 15px);
+    }
+
+    .bar-two {
+        height: calc(80% - 20px);
+    }
+
+    .title {
+        font-size: 10px;
+        text-align: center;
+    }
+`;
 
 export const SecondContainer = styled.div`
     margin-top: 80px;

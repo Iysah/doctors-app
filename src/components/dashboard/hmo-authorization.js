@@ -13,26 +13,35 @@ import { Heading1, Heading2 } from "../../styles/dashboard.style";
 import { useRouter } from "next/navigation";
 import { Form, Sumbit } from "../../styles/add-patient.style";
 
-const roundToNearestFive = (value, min_value) => {
-    //For cases where value is too small
-    //set default value to min_value
+// const roundToNearestFive = (value, min_value) => {
+//     //For cases where value is too small
+//     //set default value to min_value
 
-    if (value <= min_value) {
-        return min_value;
-    }
-    if (value % 5 >= 1) {
-        // Round up to the nearest multiple of 5
-        return Math.ceil(value / 5) * 5;
-    } else {
-        // Round down to the nearest multiple of 5
-        return Math.floor(value / 5) * 5;
-    }
-};
+//     if (value <= min_value) {
+//         return min_value;
+//     }
+//     if (value % 5 >= 1) {
+//         // Round up to the nearest multiple of 5
+//         return Math.ceil(value / 5) * 5;
+//     } else {
+//         // Round down to the nearest multiple of 5
+//         return Math.floor(value / 5) * 5;
+//     }
+// };
 
 const createChartData = (max) => {
-    const max_status_value = roundToNearestFive(max, 25);
+    if (max <= 25) {
+        //For cases where value is too small
+    //set default value to min_value
+        const max_status_value = 35
+    }
+    
+    const max_status_value = max;
+
+    const max_as_string = max.toString();
+    const max_length = max_as_string.max_length;
     // set the vertical scale interval
-    const interval = max_status_value / 5;
+    const interval = (max_status_value + 10) / 5;
 
     // In order to keep the number of the horizontal line to 6 interval
     // I created an array for the values for those line

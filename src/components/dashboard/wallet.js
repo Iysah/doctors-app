@@ -13,9 +13,62 @@ import {
     Wrapper,
 } from "../../styles/wallet.style";
 
+import { Heading2 } from "../../styles/dashboard.style";
 
 const Wallet = () => {
-    
+    function generateWeekRangesForYear(year) {
+        const months = [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+        ];
+
+        const weekRanges = [];
+        let singleRange = [];
+
+        for (let monthIndex = 0; monthIndex < months.length; monthIndex++) {
+            const month = months[monthIndex];
+
+            // Calculate the last day of the month
+            const lastDay = new Date(year, monthIndex + 1, 0).getDate();
+
+            let startDay = 1;
+            while (startDay <= lastDay) {
+                const endDay = Math.min(startDay + 6, lastDay);
+                const weekRange = `${month} ${startDay} - ${endDay}`;
+                singleRange.push(weekRange);
+                startDay += 7;
+            }
+            singleRange[singleRange.length - 1] = "Final week";
+
+            weekRanges.push(singleRange);
+            singleRange = [];
+        }
+
+        return weekRanges;
+    }
+
+    const getCurrentMonthRange = () => {
+        const currentDate = new Date();
+        const currentMonth = currentDate.getMonth();
+        const currentYear = currentDate.getFullYear();
+
+        const currentMonthRange =
+            generateWeekRangesForYear(currentYear)[currentMonth];
+        return currentMonthRange;
+    };
+
+    const monthRange = getCurrentMonthRange();
+
     return (
         <Wrapper>
             <FirstContainer>
@@ -84,7 +137,59 @@ const Wallet = () => {
                 </WalletDetails>
 
                 <Chart>
-                  
+                    <div className="wrapper">
+                        <Heading2>Your earned for this month</Heading2>
+
+                        <div className="chart">
+                            <div className="x-axis">
+                                <span>25 000 </span>
+                                <div className="line"></div>
+                            </div>
+                            <div className="x-axis">
+                                <span>15 000 </span>
+                                <div className="line"></div>
+                            </div>
+                            <div className="x-axis">
+                                <span>10 000</span>
+                                <div className="line"></div>
+                            </div>
+                            <div className="x-axis">
+                                <span>5 000</span>
+                                <div className="line"></div>
+                            </div>
+                            <div className="x-axis last">
+                                <span>0 </span>
+                                <div className="line"></div>
+                            </div>
+
+                            <div className="absolute">
+                                <div className="bar-container">
+                                    <div className="bar bar-one"></div>
+                                    <p className="title">{monthRange[0]}</p>
+                                </div>
+
+                                <div className="bar-container">
+                                    <div className="bar bar-one"></div>
+                                    <p className="title">{monthRange[1]}</p>
+                                </div>
+
+                                <div className="bar-container">
+                                    <div className="bar bar-one"></div>
+                                    <p className="title">{monthRange[2]}</p>
+                                </div>
+
+                                <div className="bar-container">
+                                    <div className="bar bar-two"></div>
+                                    <p className="title">{monthRange[3]}</p>
+                                </div>
+
+                                <div className="bar-container">
+                                    <div className="bar bar-three"></div>
+                                    <p className="title">{monthRange[4]}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </Chart>
             </FirstContainer>
 

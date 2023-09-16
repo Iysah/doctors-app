@@ -1,3 +1,4 @@
 {
-  "/(dashboard)/hmo-authorization/page": "app/(dashboard)/hmo-authorization/page.js"
+  "/(dashboard)/page": "app/(dashboard)/page.js",
+  "/(dashboard)/wallet/page": "app/(dashboard)/wallet/page.js"
 }
