@@ -55,7 +55,7 @@ export const RequestCard = styled.div`
     background-position: left;
     background-size: cover;
     border-radius: 30px;
-    margin-top: 30px;
+    margin: 30px 0;
     padding: 30px 25px 45px;
     color: #fff;
 
@@ -77,10 +77,6 @@ export const RequestCard = styled.div`
         @media screen and (max-width: 768px) {
             font-size: 20px;
         }
-
-        @media screen and (max-width: 570px) {
-            font-size: 16px;
-        }
     }
 
     p {
@@ -94,100 +90,98 @@ export const RequestCard = styled.div`
             font-size: 16px;
             font-weight: 400;
             margin-top: 5px;
-        }
 
-        @media screen and (max-width: 768px) {
-            font-size: 14px;
-
-            span {
-                font-size: 12px;
+            @media screen and (max-width: 450px) {
+                margin-top: 10px;
             }
         }
 
-        @media screen and (max-width: 570px) {
-            font-size: 10px;
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
 
             span {
-                font-size: 8px;
+                font-size: 14px;
             }
         }
     }
 `;
 
-export const GridContainer = styled.div`
-    margin-top: 30px;
+export const TableContainer = styled.div`
+    margin-top: 50px;
 `;
 
-export const Grid = styled.div`
+export const Table = styled.div`
     padding: 15px 0 25px;
-
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1.625fr 0.375fr repeat(3, 1fr);
-
-        @media screen and (max-width: 570px) {
-            grid-template-columns: 1fr 2fr 0fr repeat(3, 1fr);
-        }
-
-        @media screen and (max-width: 385px) {
-            grid-template-columns: 1fr 1.9fr 0fr 1.625fr repeat(2, 1fr);
-        }
-
-        p {
-            border-top: 1px solid rgba(34, 34, 34, 0.25);
-            color: rgba(34, 34, 34, 0.7);
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 400;
-            padding: 8px;
-
-            @media screen and (max-width: 768px) {
-                font-size: 10px;
-            }
-
-            @media screen and (max-width: 570px) {
-                font-size: 7px;
-                padding: 4px;
-            }
-        }
+    overflow-x: auto;
+    table {
+        border-collapse: collapse;
+        text-align: left;
+        width: 100%;
+        white-space: nowrap;
     }
 
-    p.no-border {
-        border: none;
-    }
-
-    p.border-left {
-        border-left: 1px solid rgba(34, 34, 34, 0.25);
-    }
-
-    p.border-right {
-        border-right: 1px solid rgba(34, 34, 34, 0.25);
-    }
-
-    p.border-bottom {
-        border-bottom: 1px solid rgba(34, 34, 34, 0.25);
-    }
-
-    p.grid-heading {
-        color: #111;
-        cursor: auto;
-        font-size: 18px;
-        font-weight: 600;
-        padding-bottom: 14px;
+    thead {
+        color: #000;
+        font-size: 16px;
 
         @media screen and (max-width: 768px) {
             font-size: 14px;
         }
 
-        @media screen and (max-width: 570px) {
-            font-size: 10px;
+        th {
+            font-weight: 600;
+            padding-bottom: 13px;
+        }
+    }
+
+    tr {
+        cursor: pointer;
+    }
+
+    td,
+    th {
+        padding: 6px 0;
+    }
+
+    th:first-child,
+    td:first-child {
+        padding-left: 16px;
+    }
+
+    th,
+    td {
+        padding-right: 16px;
+    }
+
+    tbody {
+        color: rgba(34, 34, 34, 0.7);
+        font-size: 14px;
+        font-weight: 400;
+
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
+
+        tr {
+            border: 1px solid rgba(34, 34, 34, 0.2);
+            border-bottom: transparent;
+        }
+
+        td:first-child {
+            font-weight: 500;
+        }
+
+        tr:last-child {
+            border-bottom: 1px solid rgba(34, 34, 34, 0.2);
         }
     }
 
     .info {
         overflow: hidden;
         text-overflow: ellipsis;
-        white-space: nowrap;
+        min-width: 85px;
+        max-width: 150px;
+        padding-right: 25px;
     }
 `;
 
