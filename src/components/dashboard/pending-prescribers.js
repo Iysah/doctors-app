@@ -75,7 +75,7 @@ const PendingPrescribers = () => {
                                 <ToggleButton />
                             </td>
                             <td>Hazeeb Ibrahim</td>
-                            <td>876456</td>
+                            <td className="reg">876456</td>
                         </tr>
 
                         <tr>
@@ -83,7 +83,7 @@ const PendingPrescribers = () => {
                                 <ToggleButton />
                             </td>
                             <td>Hazeeb Ibrahim</td>
-                            <td>568456</td>
+                            <td className="reg">568456</td>
                         </tr>
 
                         <tr>
@@ -91,7 +91,7 @@ const PendingPrescribers = () => {
                                 <ToggleButton />
                             </td>
                             <td>Hazeeb Ibrahim</td>
-                            <td>398456</td>
+                            <td className="reg">398456</td>
                         </tr>
                     </tbody>
                 </Table>

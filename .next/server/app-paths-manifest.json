@@ -1,5 +1,7 @@
 {
   "/(dashboard)/wallet/page": "app/(dashboard)/wallet/page.js",
-  "/(dashboard)/request/page": "app/(dashboard)/request/page.js",
-  "/(dashboard)/page": "app/(dashboard)/page.js"
+  "/(dashboard)/chat/page": "app/(dashboard)/chat/page.js",
+  "/(dashboard)/pending-prescribers/page": "app/(dashboard)/pending-prescribers/page.js",
+  "/(dashboard)/claim-hmo/page": "app/(dashboard)/claim-hmo/page.js",
+  "/(dashboard)/settings/page": "app/(dashboard)/settings/page.js"
 }

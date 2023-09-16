@@ -35,6 +35,7 @@ export const Table = styled.table`
         overflow: hidden;
         text-overflow: ellipsis;
         width: 70%;
+        max-width: 120px;
 
         @media screen and (max-width: 350px) {
             width: 70px;
@@ -64,10 +65,6 @@ export const Table = styled.table`
 
         @media screen and (max-width: 768px) {
             font-size: 16px;
-        }
-
-        @media screen and (max-width: 480px) {
-            font-size: 12px;
         }
     }
 `;

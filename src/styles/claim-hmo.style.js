@@ -83,7 +83,7 @@ export const Card = styled.div`
         }
 
         @media screen and (max-width: 450px) {
-            font-size: 12px;
+            font-size: 13px;
         }
     }
 
@@ -143,10 +143,6 @@ export const Card = styled.div`
 
         @media screen and (max-width: 700px) {
             font-size: 11px;
-        }
-
-        @media screen and (max-width: 450px) {
-            font-size: 9px;
         }
     }
 `;

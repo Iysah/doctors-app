@@ -47,7 +47,6 @@ export const SearchBar = styled.label`
         min-width: 240px;
 
         @media screen and (max-width: 480px) {
-            font-size: 12px;
             min-width: 150px;
             max-width: 150px;
         }
@@ -116,12 +115,6 @@ export const ChatCard = styled.div`
             width: 35px;
         }
 
-        @media screen and (max-width: 378px) {
-            height: 27px;
-            min-width: 27px;
-            width: 27px;
-        }
-
         p {
             color: #fff;
             font-size: 24px;
@@ -129,10 +122,6 @@ export const ChatCard = styled.div`
 
             @media screen and (max-width: 768px) {
                 font-size: 20px;
-            }
-
-            @media screen and (max-width: 378px) {
-                font-size: 16px;
             }
         }
     }
@@ -147,7 +136,7 @@ export const ChatCard = styled.div`
         font-weight: 600;
 
         @media screen and (max-width: 768px) {
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 
@@ -162,10 +151,6 @@ export const ChatCard = styled.div`
         font-weight: 400;
         margin-top: 20px;
         max-width: 80%;
-
-        @media screen and (max-width: 768px) {
-            font-size: 10px;
-        }
 
         @media screen and (max-width: 480px) {
             max-width: 94%;

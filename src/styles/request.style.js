@@ -37,11 +37,8 @@ export const TextBox = styled.div`
         color: rgba(34, 34, 34, 0.7);
         font-size: 14px;
         font-weight: 400;
+        line-height: 1.65;
         margin-bottom: 40px;
-
-        @media screen and (max-width: 480px) {
-            font-size: 12px;
-        }
     }
 `;
 
@@ -77,12 +74,8 @@ export const ReportCard = styled.div`
 
         p {
             color: rgba(34, 34, 34, 0.7);
-            font-size: 10px;
+            font-size: 12px;
             font-weight: 400;
-
-            @media screen and (max-width: 480px) {
-                font-size: 8px;
-            }
         }
     }
 `;

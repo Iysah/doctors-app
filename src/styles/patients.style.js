@@ -41,11 +41,6 @@ export const AddButton = styled.button`
     @media screen and (max-width: 768px) {
         font-size: 12px;
     }
-
-    @media screen and (max-width: 580px) {
-        font-size: 10px;
-        padding: 7px 10px;
-    }
 `;
 
 export const Table = styled.div`

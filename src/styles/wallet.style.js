@@ -93,10 +93,6 @@ export const WalletDetails = styled.div`
             @media screen and (max-width: 768px) {
                 font-size: 12px;
             }
-
-            @media screen and (max-width: 400px) {
-                font-size: 12px;
-            }
         }
 
         .large {
@@ -138,6 +134,7 @@ export const button = styled.button`
     text-align: center;
     text-transform: capitalize;
     max-width: 215px;
+    white-space: nowrap;
 
     @media screen and (max-width: 768px) {
         font-size: 12px;
@@ -147,11 +144,6 @@ export const button = styled.button`
 
     @media screen and (max-width: 480px) {
         padding: 8px 16px;
-    }
-
-    @media screen and (max-width: 400px) {
-        font-size: 10px;
-        padding: 8px;
     }
 `;
 
